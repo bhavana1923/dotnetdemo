@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: fluentd-daemon
-  namespace: hello   # Replace 'your_namespace' with the desired namespace
+  namespace: hello  # Replace 'your_namespace' with the desired namespace
 spec:
   selector:
     matchLabels:
@@ -11,6 +11,7 @@ spec:
     metadata:
       labels:
         app: fluentd-daemon
+        
     spec:
       containers:
         - name: fluentd
