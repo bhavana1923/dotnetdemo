@@ -41,7 +41,7 @@ stages:
   displayName: Build and push stage
   jobs:
   - job: DeployToDev
-    displayName: Build
+    displayName: DeployToDev
     pool:
       vmImage: $(vmImageName)
     steps:
