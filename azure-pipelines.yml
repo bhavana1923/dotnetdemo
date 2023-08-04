@@ -9,15 +9,16 @@ resources:
 - repo: self
 
 variables:
+- group: group1
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'e7b42d2f-2a10-45e3-a83b-b2e91147f27e'
-  imageRepository: 'image1'
-  containerRegistry: 'bhavana.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
-  tag: '$(Build.BuildId)'
+  #dockerRegistryServiceConnection: 'e7b42d2f-2a10-45e3-a83b-b2e91147f27e'
+  #imageRepository: 'image1'
+  #containerRegistry: 'bhavana.azurecr.io'
+  #dockerfilePath: '**/Dockerfile'
+  #tag: '$(Build.BuildId)'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  #vmImageName: 'ubuntu-latest'
 
 stages:
 - stage: Build
